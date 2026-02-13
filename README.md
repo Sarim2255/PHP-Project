@@ -148,7 +148,7 @@ Click New
 
 Enter database name:
 
-ecommerce
+cartify_store
 
 
 Click Create
@@ -163,7 +163,7 @@ Click Choose File
 
 Select:
 
-database/ecommerce.sql
+database/cartify_store.sql
 
 
 Click Go
@@ -182,12 +182,8 @@ Open SQL tab
 
 Copy content from:
 
-database/ecommerce.sql
+database/cartify_store.sql
 
-
-💡 Extra Professional Touch
-
-Add this above it:
 
 
 🔐 Security Notes
