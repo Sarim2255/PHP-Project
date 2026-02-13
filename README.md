@@ -75,25 +75,36 @@ User → Browse Products → Add to Cart → Checkout → Order Stored in Databa
 Admin → Login → Add/Manage Products → Products Visible to Users
 
 📁 Project Structure
-        ecommerce_pro_ui/
-            │
-            ├── index.php
-            ├── login.php
-            ├── signup.php
-            ├── cart.php
-            ├── checkout.php
-            │
-            ├── admin/
-            │     ├── admin_login.php
-            │     ├── dashboard.php
-            │     └── add_product.php
-            │
-            ├── assets/
-            │     ├── css/
-            │     │     └── style.css
-            │     └── img/
-            │
-            └── db.php
+Cartify-Ecommerce-Website/
+│
+├── 📄 index.php              # Homepage – Displays products
+├── 📄 login.php              # User login page
+├── 📄 signup.php             # User registration page
+├── 📄 logout.php             # Logout functionality
+├── 📄 product_detail.php     # Product details page
+├── 📄 add_to_cart.php        # Add product to cart logic
+├── 📄 cart.php               # User shopping cart
+├── 📄 checkout.php           # Order placement logic
+├── 📄 db.php                 # Database connection file
+│
+├── 📁 admin/                 # Admin Panel
+│   ├── 📄 admin_login.php    # Admin authentication
+│   ├── 📄 dashboard.php      # Admin dashboard
+│   └── 📄 add_product.php    # Add new product
+│
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── 📄 style.css      # Main stylesheet
+│   │
+│   ├── 📁 img/               # Product images
+│   │
+│   └── 📁 js/                # (Optional future JS files)
+│
+├── 📁 database/
+│   └── 📄 ecommerce.sql      # SQL file for database setup
+│
+└── 📄 README.md              # Project documentation
+
 
 ⚙️ Installation & Setup
 
