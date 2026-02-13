@@ -1,0 +1,286 @@
+/* ==================================================
+   CARTIFY — PROFESSIONAL AMAZON-STYLE UI THEME
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary: #131921;     /* Amazon dark */
+  --secondary: #232f3e;   /* Amazon nav */
+  --accent: #febd69;      /* Amazon yellow */
+  --accent-dark: #f3a847;
+  --danger: #b12704;
+  --bg: #eaeded;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --radius: 12px;
+}
+
+/* ================= GLOBAL ================= */
+
+body {
+  background: var(--bg);
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= HEADER ================= */
+
+.amazon-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+  background: var(--primary);
+  color: #fff;
+}
+
+.header-logo a {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.header-search {
+  flex: 1;
+  display: flex;
+  max-width: 650px;
+}
+
+.header-search input {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 4px 0 0 4px;
+}
+
+.header-search button {
+  padding: 0 18px;
+  background: var(--accent);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
+}
+
+.header-search button:hover {
+  background: var(--accent-dark);
+}
+
+.header-right {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-right a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.header-cart {
+  position: relative;
+}
+
+.cart-count {
+  background: var(--accent);
+  color: #111;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+/* ================= CATEGORY STRIP ================= */
+
+.category-strip {
+  display: flex;
+  gap: 18px;
+  padding: 10px 20px;
+  background: var(--secondary);
+  overflow-x: auto;
+}
+
+.category-strip a {
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.category-strip a:hover {
+  text-decoration: underline;
+}
+
+/* ================= CONTAINER ================= */
+
+.container {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+/* ================= PRODUCT GRID ================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+  width:100%;
+  height:220px;
+  object-fit:contain;
+  background:#f3f4f6;
+}
+
+
+
+.product-info {
+  padding: 14px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.product-category {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--danger);
+  margin-bottom: 12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #d1d5db;
+}
+
+.wishlist-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e11d48;
+}
+
+/* ================= AUTH (LOGIN / REGISTER) ================= */
+
+.auth-wrapper {
+  max-width: 420px;
+  margin: 60px auto;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.auth-card h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-card label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.auth-card input,
+.auth-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.auth-card input:focus,
+.auth-card textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.auth-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-actions .btn {
+  flex: 1;
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #fff;
+  padding: 18px;
+  text-align: center;
+  color: #555;
+  margin-top: 50px;
+}
