@@ -119,15 +119,75 @@ Place the project folder inside:
 C:/xampp/htdocs/
 
 
-Create a database named:
+
+🗄️ Database Setup Using XAMPP
+
+Follow these steps to set up the database:
+
+1️⃣ Install XAMPP
+
+Download and install XAMPP.
+
+2️⃣ Start Apache & MySQL
+
+Open XAMPP Control Panel and start:
+
+Apache
+
+MySQL
+
+3️⃣ Open phpMyAdmin
+
+Go to:
+
+http://localhost/phpmyadmin/
+
+4️⃣ Create Database
+
+Click New
+
+Enter database name:
 
 ecommerce
 
 
-Import the SQL file (tables: users, products, cart, orders)
+Click Create
 
-Open in browser:
+5️⃣ Import SQL File
 
+Select the ecommerce database
+
+Click Import
+
+Click Choose File
+
+Select:
+
+database/ecommerce.sql
+
+
+Click Go
+
+Tables will be created automatically.
+
+✅ Alternative: Manual SQL Execution
+
+You can also:
+
+Go to phpMyAdmin
+
+Click on ecommerce database
+
+Open SQL tab
+
+Copy content from:
+
+database/ecommerce.sql
+
+
+💡 Extra Professional Touch
+
+Add this above it:
 
 
 🔐 Security Notes
