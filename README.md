@@ -75,35 +75,37 @@ User → Browse Products → Add to Cart → Checkout → Order Stored in Databa
 Admin → Login → Add/Manage Products → Products Visible to Users
 
 📁 Project Structure
+## 📁 Project Structure
+
+```bash
 Cartify-Ecommerce-Website/
 │
-├── 📄 index.php              # Homepage – Displays products
-├── 📄 login.php              # User login page
-├── 📄 signup.php             # User registration page
-├── 📄 logout.php             # Logout functionality
-├── 📄 product_detail.php     # Product details page
-├── 📄 add_to_cart.php        # Add product to cart logic
-├── 📄 cart.php               # User shopping cart
-├── 📄 checkout.php           # Order placement logic
-├── 📄 db.php                 # Database connection file
+├── index.php              # Homepage – Displays products
+├── login.php              # User login page
+├── signup.php             # User registration page
+├── logout.php             # Logout functionality
+├── product_detail.php     # Product details page
+├── add_to_cart.php        # Add product to cart logic
+├── cart.php               # User shopping cart
+├── checkout.php           # Order placement logic
+├── db.php                 # Database connection file
 │
-├── 📁 admin/                 # Admin Panel
-│   ├── 📄 admin_login.php    # Admin authentication
-│   ├── 📄 dashboard.php      # Admin dashboard
-│   └── 📄 add_product.php    # Add new product
+├── admin/
+│   ├── admin_login.php    # Admin authentication
+│   ├── dashboard.php      # Admin dashboard
+│   └── add_product.php    # Add new product
 │
-├── 📁 assets/
-│   ├── 📁 css/
-│   │   └── 📄 style.css      # Main stylesheet
-│   │
-│   ├── 📁 img/               # Product images
-│   │
-│   └── 📁 js/                # (Optional future JS files)
+├── assets/
+│   ├── css/
+│   │   └── style.css      # Main stylesheet
+│   ├── img/               # Product images
+│   └── js/                # Future JS files
 │
-├── 📁 database/
-│   └── 📄 ecommerce.sql      # SQL file for database setup
+├── database/
+│   └── ecommerce.sql      # SQL database file
 │
-└── 📄 README.md              # Project documentation
+└── README.md              # Project documentation
+```
 
 
 ⚙️ Installation & Setup
