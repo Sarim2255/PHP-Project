@@ -75,25 +75,25 @@ User → Browse Products → Add to Cart → Checkout → Order Stored in Databa
 Admin → Login → Add/Manage Products → Products Visible to Users
 
 📁 Project Structure
-ecommerce_pro_ui/
-│
-├── index.php
-├── login.php
-├── signup.php
-├── cart.php
-├── checkout.php
-│
-├── admin/
-│     ├── admin_login.php
-│     ├── dashboard.php
-│     └── add_product.php
-│
-├── assets/
-│     ├── css/
-│     │     └── style.css
-│     └── img/
-│
-└── db.php
+        ecommerce_pro_ui/
+            │
+            ├── index.php
+            ├── login.php
+            ├── signup.php
+            ├── cart.php
+            ├── checkout.php
+            │
+            ├── admin/
+            │     ├── admin_login.php
+            │     ├── dashboard.php
+            │     └── add_product.php
+            │
+            ├── assets/
+            │     ├── css/
+            │     │     └── style.css
+            │     └── img/
+            │
+            └── db.php
 
 ⚙️ Installation & Setup
 
